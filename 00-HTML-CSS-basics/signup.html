@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head lang="es">
+  <meta charset="UTF-8"/>
+  <meta name="description" content="SignUp form">
+  <meta name="keywords" content="HTML">
+  <meta name="author" content="Maxi Pawlowski">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sign up</title>
+  <script>
+  function clearForm() {
+    document.getElementById("signupform").reset();
+  }
+</script>
+
+</head>
+<body>
+  <div style="text-align: center;">
+    <h2>Signup Form</h2>
+    <form id="signupform">
+
+      <label>Name</label> <input type="text" required name="firstName">
+      <br/>
+      <label>Last Name</label> <input type="text" required name="lastName"><br/>
+
+      <label>Email</label> <input type="email" required name="email"><br/>
+
+      <label>Birthday</label> <input type="date" name="birthday"><br/>
+
+      <label>Small Bio</label><br/>
+      <textarea cols="20" rows="5" name="bio"></textarea>
+      <br/>
+
+      <label>Favorite Sport</label> <select>
+        <option>Soccer</option>
+        <option>Tennis</option>
+        <option>Rugby</option>
+      </select><br/><br/>
+
+      <button type="submit">Send</button>
+
+      <input type="button" onclick="clearForm()" value="Clear form">
+
+
+
+    </form>
+  </div>
+</body>
+</html>
