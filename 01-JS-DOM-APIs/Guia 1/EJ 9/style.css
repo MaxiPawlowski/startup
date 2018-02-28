@@ -1,0 +1,14 @@
+section{
+  text-align: center;
+}
+#hworld{
+  opacity: 0;
+}
+.cred{
+  color: red;
+}
+.lista{
+  position: absolute;
+  right: 0;
+  top: 0;
+}
